@@ -98,6 +98,9 @@ header nav .logo{
   white-space: nowrap;
 }
 
+#side-bar a{
+  text-decoration: none;
+}
 .menu-item {
   background-color: whitesmoke;
   border: none;

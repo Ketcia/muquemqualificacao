@@ -1,0 +1,119 @@
+---
+layout: layout.njk
+title: "Livro 1 - Sumário"
+---
+
+<div class="sumario-container">
+    <h1>📖 Livro 1</h1>
+    <p class="descricao">Bem-vindo ao Livro 1! Aqui você encontrará todas as atividades organizadas por blocos e unidades.</p>
+    
+    <div class="blocos-grid">
+        <!-- Bloco 1 -->
+        <div class="bloco-card">
+            <h2>📁 Bloco 1</h2>
+            <p class="bloco-info">Unidades 1 - 3</p>
+            <p class="bloco-descricao">Conceitos intermediários e práticas</p>
+            <a href="/livro1/bloco1/unitlist/index.html" class="btn-bloco">Acessar Bloco 1</a>
+        </div>
+
+        <!-- Bloco 2 -->
+        <div class="bloco-card">
+            <h2>📁 Bloco 2</h2>
+            <p class="bloco-info">Unidades 4 - 7</p>
+            <p class="bloco-descricao">Conceitos intermediários e práticas</p>
+            <a href="/livro1/bloco2/" class="btn-bloco">Acessar Bloco 2</a>
+        </div>
+
+        <!-- Bloco 2 -->
+        <div class="bloco-card">
+            <h2>📁 Bloco 3</h2>
+            <p class="bloco-info">Unidades 8 - 12</p>
+            <p class="bloco-descricao">Conceitos intermediários e práticas</p>
+            <a href="/livro1/bloco3/" class="btn-bloco">Acessar Bloco 3</a>
+        </div>
+
+        <!-- Bloco 2 -->
+        <div class="bloco-card">
+            <h2>📁 Bloco 4</h2>
+            <p class="bloco-info">Unidades 12 - 15</p>
+            <p class="bloco-descricao">Conceitos intermediários e práticas</p>
+            <a href="/livro1/bloco4/" class="btn-bloco">Acessar Bloco 4</a>
+        </div>
+    </div>
+</div>
+
+<style>
+.sumario-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sumario-container h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.descricao {
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.blocos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.bloco-card {
+    background: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bloco-card:hover {
+    border-color: var(--amarelo);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bloco-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.bloco-info {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.bloco-descricao {
+    color: #888;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-bloco {
+    display: inline-block;
+    background-color: var(--amarelo);
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-bloco:hover {
+    background-color: #e6b800;
+}
+</style>
